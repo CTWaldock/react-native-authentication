@@ -5,7 +5,7 @@ import CardSection from './common/CardSection.js';
 import Button from './common/Button.js';
 
 class LoginForm extends Component {
-  state = {text: ''};
+  state = {email: ''};
 
 
 
@@ -15,9 +15,10 @@ class LoginForm extends Component {
         <CardSection />
         <CardSection>
           <Input
+          placeholder="user@example.com"
           lable="Email"
           value={this.state.text}
-          onChangeText={text => this.setState({ text })}
+          onChangeText={email => this.setState({ email })}
           />
         </CardSection>
 
